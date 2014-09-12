@@ -1,37 +1,65 @@
-<?php
+<!DOCTYPE html>
+<html lang="en" ng-app="TestApp">
+<head>
+    <title>Test App</title>
 
-require __DIR__.'/../vendor/autoload.php';
+    <link rel="stylesheet" type="text/css" href="frontend/css/main.css">
 
-$app = new Slim\Slim();
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-$app->get('/users', function() {
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#users"><i class="fa fa-home"></i> Users </a></li>
+                <li><a href="#main"><i class="fa fa-home"></i> Main</a></li>
+            </ul>
+        </div>
+    </div>
 
-    echo "ASDF";
-    $users = User::all();
-    die($users);
-    header("Content-Type: application/json");
-    echo json_encode($users);
-    exit;
-});
+    <br><br>
 
-$app->get('/', function() {
-	// $user = new User;
-    $users = User::all();
-    die($users);
+    <!-- All of our Angular views go here /public/partials/* -->
+    <div class="container" class="row">
+        <div class="col-xs-12">
+	       <div ng-view></div>
+        </div>
+    </div>
 
-    $user->username = "Test User";
-    $user->save();
+	<!-- <div class="container" ng&#45;controller="TestController"> -->
+	<!-- 	<span>{{ book }}</span> -->
+	<!-- </div> -->
 
-    echo "Hello, $user->username!";
-});
+    <br><br>
 
+    <!-- Source Venders -->
+    <script type="text/javascript" src="frontend/js/vendors/angular.min.js"></script>
+    <!-- <script type="text/javascript" src="/js/vendors/jquery&#45;2&#45;1&#45;0.min.js"></script> -->
+    <script type="text/javascript" src="frontend/js/vendors/angular-route.min.js"></script>
 
-$app->get('/hi/', function() {
-    $user = new User;
-    $user->username = "Thiiiiiasdf; User";
-    // $user->save();
+    <!-- Source TestApp -->
+    <script type="text/javascript" src="frontend/js/apps/test.js"></script>
 
-    echo "Hello, $user->username!";
-});
+    <!-- Source Services -->
+    <!-- <script type="text/javascript" src="/js/services/authentication_service.js"></script> -->
+    <!-- <script type="text/javascript" src="/js/services/session_service.js"></script> -->
+    <!-- <script type="text/javascript" src="/js/services/book_service.js"></script> -->
 
-$app->run();
+    <!-- Source Controllers -->
+    <script type="text/javascript" src="frontend/js/controllers/test_controller.js"></script>
+    <!-- <script type="text/javascript" src="/js/controllers/books_controller.js"></script> -->
+
+    <!-- Source Directives -->
+
+    <!-- Source Routes -->
+    <script type="text/javascript" src="frontend/js/routes/routes.js"></script>
+
+</body>
+</html>
