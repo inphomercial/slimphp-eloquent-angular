@@ -9,8 +9,8 @@ $capsule = new Capsule;
 
 $capsule->addConnection(array(
     'driver'    => 'mysql',
-    'host'      => 'localhost',
-    'database'  => 'test',
+    'host'      => '127.0.0.1',
+    'database'  => 'slim',
     'username'  => 'root',
     'password'  => '',
     'charset'   => 'utf8',

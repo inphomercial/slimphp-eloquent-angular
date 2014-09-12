@@ -6,6 +6,10 @@ class UserSeed {
     {
         $user = new User;
         $user->username = "Test User";
-        $user->save();
+	$user->save();
+
+	$user1 = new User;
+	$user1->username = "Slauppp";
+	$user1->save();
     }
 }
