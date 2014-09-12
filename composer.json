@@ -4,7 +4,7 @@
         "illuminate/database": "*"
     },
     "autoload": {
-        "files": [ "app/config.php" ],
-        "classmap": [ "app/models" ]
+        "files": [ "public/api/config.php" ],
+        "classmap": [ "public/api/models" ]
     }
 }
