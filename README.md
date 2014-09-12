@@ -1,6 +1,6 @@
-# Slim & Eloquent
+# Slim & Eloquent & AngularJS
 
-The Slim PHP micro framework paired with Laravel's Illuminate Database toolkit.
+The Slim PHP micro framework paired with Laravel's Illuminate Database toolkit and AngularJS
 
 ## Getting started
 
