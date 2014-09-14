@@ -48,6 +48,8 @@ http://docs.slimframework.com
 #### Eloquent ORM
 http://laravel.com/docs/eloquent
 
-and
+#### AngularJS
+https://angularjs.org/
 
-https://github.com/illuminate/database/blob/master/README.md
+#### Based on Kladd slim-eloquent 
+https://github.com/kladd/slim-eloquent
