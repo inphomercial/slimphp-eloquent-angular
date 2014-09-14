@@ -51,5 +51,5 @@ http://laravel.com/docs/eloquent
 #### AngularJS
 https://angularjs.org/
 
-#### Based on Kladd slim-eloquent 
+#### Based on Kladds' slim-eloquent 
 https://github.com/kladd/slim-eloquent

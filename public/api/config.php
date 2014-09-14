@@ -12,7 +12,7 @@ $capsule->addConnection(array(
     'host'      => '127.0.0.1',
     'database'  => 'slim',
     'username'  => 'root',
-    'password'  => '',
+    'password'  => 'root',
     'charset'   => 'utf8',
     'collation' => 'utf8_general_ci',
     'prefix'    => ''
