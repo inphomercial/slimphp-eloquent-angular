@@ -29,7 +29,6 @@ function root() {
     echo "Hello, $user->username!";
 };
 
-
 function username($username) {
     $user = new User;
     $user->username = $username;
